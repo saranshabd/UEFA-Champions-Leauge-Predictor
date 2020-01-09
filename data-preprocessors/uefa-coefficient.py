@@ -27,6 +27,10 @@ df = df[df['Club'].isin(['Real Madrid', 'Barcelona', 'Bayern Munich',
         'Paris Saint-Germain', 'Liverpool','Tottenham Hotspur', 'Chelsea', 
         'Borussia Dortmund'])]
 
+# add records of 2014-15 seasons
+df['C_2014-15'] = [29.0, 34.0, 28.0, 22.0, 29.0, 15.0, 21.0, 10.0, 11.0, 21.0,
+  18.0]
+
 # set team name as the index
 df.set_index('Club', inplace=True)
 
